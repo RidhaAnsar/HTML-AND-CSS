@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Invitation</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+  <header>
+    <h1>You're Invited to my Birthday party!</h1>
+      </header>
+
+  <main>
+    <section>
+    
+      <h2>About the Party</h2>
+      <p>Come celebrate with me on my special day! It's going to be a blast filled with joy, laughter, and delicious treats.</p>
+    </section>
+
+    <section>
+   
+      <form id="rsvp-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="attendance">Attendance:</label>
+        <select id="attendance" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="yes">Yes, I'll be there!</option>
+          <option value="no">Sorry, I can't make it.</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div id="confirmation-message"></div>
+    </section>
+  </main>
+</body>
+</html>
